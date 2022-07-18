@@ -11,6 +11,7 @@ module.exports = [
         "http://localhost:1338",
         "http://localhost:1339",
         "https://monkeytype-clone.vercel.app/",
+        "https://limitless-ocean-79678.herokuapp.com/",
       ],
     },
   },
