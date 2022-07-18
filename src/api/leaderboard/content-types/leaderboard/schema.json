@@ -4,7 +4,8 @@
   "info": {
     "singularName": "leaderboard",
     "pluralName": "leaderboards",
-    "displayName": "leaderboard"
+    "displayName": "leaderboard",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -12,7 +13,9 @@
   "pluginOptions": {},
   "attributes": {
     "wpm": {
-      "type": "string"
+      "type": "string",
+      "required": true,
+      "regex": "^[0-9]*$"
     },
     "user": {
       "type": "relation",

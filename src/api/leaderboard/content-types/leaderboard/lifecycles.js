@@ -1,15 +1,21 @@
-// module.exports = {
-//   async afterCreate(event) {
-//     const { result } = event;
+module.exports = {
+  async afterCreate(event) {
+    const { result } = event;
 
-//     try {
-//       await strapi.plugins["email"].services.email.send({
-//         to: "ssteven075@gmail.com",
-//         subject: "you created a new leaderboard",
-//         text: `${result.wpm} wpm`,
-//       });
-//     } catch (err) {
-//       console.log(err);
-//     }
-//   },
-// };
+    try {
+      // await strapi.plugins["email"].services.email.send({
+      //   to: "ssteven075@gmail.com",
+      //   subject: "you created a new leaderboard",
+      //   text: `${result.wpm} wpm`,
+      // });
+      console.log(result);
+    } catch (err) {
+      console.log(err);
+    }
+  },
+  async afterDelete(event) {
+    const { result } = event;
+
+    console.log(result);
+  },
+};
