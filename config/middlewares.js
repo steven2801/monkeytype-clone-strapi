@@ -9,6 +9,7 @@ module.exports = [
       origin: [
         "http://localhost:3000",
         "http://localhost:1338",
+        "http://localhost:1339",
         "https://monkeytype-clone.vercel.app/",
       ],
     },
