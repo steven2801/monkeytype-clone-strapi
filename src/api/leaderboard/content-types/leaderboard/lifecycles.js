@@ -8,7 +8,7 @@ module.exports = {
       //   subject: "you created a new leaderboard",
       //   text: `${result.wpm} wpm`,
       // });
-      console.log(result);
+      // console.log(event);
     } catch (err) {
       console.log(err);
     }

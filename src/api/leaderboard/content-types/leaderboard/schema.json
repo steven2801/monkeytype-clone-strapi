@@ -8,20 +8,31 @@
     "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
-    "wpm": {
-      "type": "string",
-      "required": true,
-      "regex": "^[0-9]*$"
-    },
     "user": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "plugin::users-permissions.user",
       "inversedBy": "leaderboards"
+    },
+    "wpm": {
+      "type": "integer",
+      "required": true
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "words",
+        "sentences",
+        "numbers"
+      ]
+    },
+    "time": {
+      "type": "integer",
+      "required": true
     }
   }
 }
