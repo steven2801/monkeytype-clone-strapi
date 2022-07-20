@@ -28,7 +28,9 @@
         "words",
         "sentences",
         "numbers"
-      ]
+      ],
+      "default": "words",
+      "required": false
     },
     "time": {
       "type": "integer",
