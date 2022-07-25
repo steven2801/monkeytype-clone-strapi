@@ -29,9 +29,8 @@ module.exports = createCoreController(
         return response;
       }
 
-      return ctx.badRequest(
-        "An error occurred. You should provide a bearer token."
-      );
+      const response = await super.create(ctx);
+      return response;
     },
   })
 );

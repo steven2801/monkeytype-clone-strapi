@@ -35,6 +35,12 @@
     "time": {
       "type": "integer",
       "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true,
+      "minLength": 3,
+      "maxLength": 18
     }
   }
 }
