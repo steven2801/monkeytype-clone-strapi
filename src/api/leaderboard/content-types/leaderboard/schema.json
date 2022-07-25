@@ -38,9 +38,10 @@
     },
     "name": {
       "type": "string",
-      "required": true,
+      "required": false,
       "minLength": 3,
-      "maxLength": 18
+      "maxLength": 18,
+      "default": "guest"
     }
   }
 }
